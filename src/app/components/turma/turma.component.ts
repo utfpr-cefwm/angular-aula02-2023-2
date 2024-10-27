@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { Turma } from '../../models/turma';
 
 @Component({
   selector: 'app-turma',
@@ -8,5 +9,10 @@ import { Component } from '@angular/core';
   styleUrl: './turma.component.css'
 })
 export class TurmaComponent {
+
+  @Input({
+    required: true,
+  })
+  public turma!: Turma;
 
 }

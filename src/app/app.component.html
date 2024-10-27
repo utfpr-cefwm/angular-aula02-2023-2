@@ -3,8 +3,15 @@
 </nav>
 
 <main>
-  Selecione uma turma para exibir.
-  <app-turma></app-turma>
+  @if (turmaService.turmaSelecionada$ | async; as t) {
+    <app-turma
+      [turma]="t"
+    >
+    </app-turma>
+  }
+  @else {
+    Selecione uma turma para exibir.
+  }
 </main>
 
 <router-outlet />

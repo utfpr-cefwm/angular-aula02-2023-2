@@ -5,6 +5,7 @@ import {
 import { CommonModule } from '@angular/common';
 
 import { TurmaService } from '../../services/turma.service';
+import { Turma } from '../../models/turma';
 
 @Component({
   selector: 'app-lista-turmas',

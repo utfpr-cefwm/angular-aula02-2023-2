@@ -1,5 +1,6 @@
 <button
   *ngFor="let t of (turmaService.turmas$ | async)"
+  (click)="turmaService.selecionaTurma(t)"
 >
   {{ t.nome }}
 </button>
