@@ -5,8 +5,9 @@ import { ReplaySubject } from 'rxjs';
 import { Turma } from '../models/turma';
 import { Disciplina } from '../models/disciplina';
 import { Aluno } from '../models/aluno';
+import { ITurma } from '../interfaces/turma';
 
-const TURMAS = [
+const TURMAS: ITurma[] = [
   {
     "_id": "613be41ddb9c47fb90d20d98",
     "ano": 2020,
