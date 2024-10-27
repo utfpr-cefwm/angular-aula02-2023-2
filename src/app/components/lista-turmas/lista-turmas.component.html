@@ -1,0 +1,5 @@
+<button
+  *ngFor="let t of (turmaService.turmas$ | async)"
+>
+  {{ t.nome }}
+</button>
